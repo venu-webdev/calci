@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+
+    <!--font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="link.png">
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="leftContainer">
+            <div id="nav">
+                <!-- <img src="pngs/Menu.png" alt="menu-icon" id="menuIcon"> -->
+                <div class="themes">
+                    <div class="theme default" id="theme1"></div>
+                    <div class="theme" id="theme2"></div>
+                    <div class="theme" id="theme3"></div>
+                    <button class="historyShowBtn"><span class="material-symbols-outlined">
+                            history
+                        </span></button>
+                    <p><small>Developed</small> @ <a href="https://github.com/venu-webdev" target="_blank">venu-webdev</a> </p>
+                </div>
+
+            </div>
+            <div class="resultScreen">
+                <div class="resultContainer">
+                    <div contenteditable="" class="textLarge rTextLarge"></div>
+                    <input type="text" class="textSmall rTextSmall">
+                </div>
+            </div>
+            <div class="buttonScreen">
+                <div class="row row2">
+
+                    <div class="commonBtn opBtn" data-value="%operator">%</div>
+                    <div class="commonBtn opBtn" data-value="/operator">
+                        <math>
+                            <mo>&#247;</mo>
+                        </math>
+                    </div>
+                    <div class="commonBtn opBtn" data-value="cclear">C</div>
+                    <div class="commonBtn opBtn intoBtn" data-value="xdelete"><span class="material-symbols-outlined deleteBtn">
+                            backspace
+                        </span></div>
+                </div>
+                <div class="row row3">
+                    <div class="commonBtn" data-value="7v">7</div>
+                    <div class="commonBtn" data-value="8v">8</div>
+                    <div class="commonBtn" data-value="9v">9</div>
+                    <div class="commonBtn opBtn" data-value="*operator">&#xd7;</div>
+                </div>
+                <div class="row row4">
+                    <div class="commonBtn" data-value="4v">4</div>
+                    <div class="commonBtn" data-value="5v">5</div>
+                    <div class="commonBtn" data-value="6v">6</div>
+                    <div class="commonBtn opBtn" data-value="-operator">-</div>
+                </div>
+                <div class="row row5">
+                    <div class="commonBtn" data-value="1v">1</div>
+                    <div class="commonBtn" data-value="2v">2</div>
+                    <div class="commonBtn" data-value="3v">3</div>
+                    <div class="commonBtn opBtn" data-value="+operator">+</div>
+                </div>
+                <div class="row row6">
+                    <div class="commonBtn" data-value="pn">&#8723;</div>
+                    <div class="commonBtn" data-value="0v">0</div>
+                    <div class="commonBtn" data-value=".v">.</div>
+                    <div class="commonBtn equalBtn" data-value="=equals">=</div>
+                </div>
+            </div>
+        </div>
+        <div id="rightContainer">
+            <div class="historyHead">
+                History
+            </div>
+            <div class="bar">
+                <hr>
+            </div>
+            <div class="historyContainer">
+            </div>
+            <div class="clearHistory"><span class="material-symbols-outlined dustBinBtn">
+                    delete
+                </span></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
